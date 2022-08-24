@@ -75,10 +75,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance2 / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance2 % (1000 * 60)) / 1000);
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
   document.getElementById("streamtime").innerHTML = "Next Stream: Devstream #163 - Fri Aug 26 2022 14:00:00 (Eastern Daylight Time)";
@@ -86,9 +86,9 @@ var x = setInterval(function() {
   document.getElementById("usertime").innerHTML = "Your Current Time: " + new Date();
   document.getElementById("countdown").innerHTML = "Countdown To Stream Start: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds ";
   document.getElementById("stream2").innerHTML = "Prime Time Returns: Thurs Sept 1 2022 18:00:00 (Eastern Daylight Time)";
-  document.getElementById("localstream2time").innerHTML = "Stream Time For You: " + countDownDate;
+  document.getElementById("localstream2time").innerHTML = "Stream Time For You: " + countDownDate2;
   document.getElementById("usertime2").innerHTML = "Your Current Time: " + new Date();
-  document.getElementById("countdown2").innerHTML = "Countdown To Stream Start: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds ";
+  document.getElementById("countdown2").innerHTML = "Countdown To Stream Start: " + days2 + " days, " + hours2 + " hours, " + minutes2 + " minutes, " + seconds2 + " seconds ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
