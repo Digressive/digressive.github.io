@@ -103,7 +103,12 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Stream Time";
+    document.getElementById("countdown").innerHTML = "Its Stream Time";
+  }
+  
+  if (distance2 < 0) {
+    clearInterval(x);
+    document.getElementById("countdown2").innerHTML = "Its Stream Time";
   }
 }, 1000);
 </script>
