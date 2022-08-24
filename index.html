@@ -36,6 +36,16 @@ a:active {
   text-decoration: underline;
 }
 
+span.small {
+  font-size: smaller;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #404040;
+}
+
 </style>
 </head>
 <body>
@@ -49,7 +59,9 @@ a:active {
 <p id="localstream2time"></p>
 <p id="countdown2"></p>
 
-<p id="info">This isn't an official Warframe site or endorsed by Digital Extremes (obviously)</p>
+<footer>
+<p><span class="small">Disclaimer: This isn't an official Warframe site or endorsed by Digital Extremes</span></p>
+</footer>
 
 <script>
 // Set the date we're counting down to
@@ -91,7 +103,7 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Stream Time!";
+    document.getElementById("countdown").innerHTML = "Stream Time";
   }
 }, 1000);
 </script>
