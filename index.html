@@ -13,7 +13,7 @@ p {
 }
 
 a:link {
-  color: green;
+  color: lightgreen;
   background-color: transparent;
   text-decoration: none;
 }
@@ -25,7 +25,7 @@ a:visited {
 }
 
 a:hover {
-  color: ;
+  color: lightseagreen;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -47,7 +47,6 @@ a:active {
 <p id="link"><a href="http://twitch.tv/warframe">twitch.tv/warframe</a></p>
 <p id="stream2"></p>
 <p id="localstream2time"></p>
-<p id="usertime2"></p>
 <p id="countdown2"></p>
 
 <p id="info">This isn't an official Warframe site or endorsed by Digital Extremes (obviously)</p>
@@ -87,7 +86,6 @@ var x = setInterval(function() {
   document.getElementById("countdown").innerHTML = "Countdown To Stream Start: " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds ";
   document.getElementById("stream2").innerHTML = "Prime Time Returns: Thurs Sept 1 2022 18:00:00 (Eastern Daylight Time)";
   document.getElementById("localstream2time").innerHTML = "Stream Time For You: " + countDownDate2;
-  document.getElementById("usertime2").innerHTML = "Your Current Time: " + new Date();
   document.getElementById("countdown2").innerHTML = "Countdown To Stream Start: " + days2 + " days, " + hours2 + " hours, " + minutes2 + " minutes, " + seconds2 + " seconds ";
     
   // If the count down is over, write some text 
